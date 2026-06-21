@@ -21,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
    </head>
    <!--id="page-top" permet de donner un identifiant unique a la balise body et permet de selectionner dans le css ou javascript en utilisant '#'-->
    <body id="page-top">
@@ -30,175 +31,544 @@
             <span class="d-block d-lg-none">TANOU Ahmadou Nouridine</span>
             <span class="d-block d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." ></span>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" arias-expanded="false" arias-label="Toggle navigation"><span  class="navbar-toggler-icon"></span></button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Formation</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interest">Interests</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>               
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Profil</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Parcours Pro</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projets Réalisés</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Compétences</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certifications">Certificats</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#languages">Langues</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Formation</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Intérêts</a></li>               
             </ul>
         </div> 
     </nav>
-    <!--Page containt-->
+    <!--Page content-->
     <div class="container-fluid p-0">
+        <!-- Profil / About -->
         <section class="resume-section" id="about">
-         <div class="resume-section-content">
-             <h1 class="mb-0">
-                 TANOU
-                 <span class="text-primary">Ahmadou Nouridine</span>
-             </h1>
-             <div class="subheading mb-5">
-                 <a href="mailto:tanouahmadou045@gmail.com">tanouahmadou045@gmail.com</a>
-             </div>
-             <p class="lead mb-5">Etudiant En Informatique</p>
-              <div class="social-icons">
-                 <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                 <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
-                 <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
-              </div>
-            </div>
-        </section>
-        <hr class="mb-0"/>
-          <!-- Experience-->
-        <section class="resume-section" id="experience">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Formation</h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Junior Developer</h3>
-                        <div class="subheading mb-3">Intelitec Solutions</div>
-                        <p>Étudiant en Licence 2 Informatique, je suis un développeur junior passionné par le développement web fullstack. J’ai acquis des compétences solides en Python et JavaScript, que j’ai mises en pratique dans plusieurs projets personnels, notamment un réseau social développé avec Django côté back-end et React côté front-end.</p>
-                        <p> Mes projets m’ont permis de maîtriser l’architecture MVC, la gestion des utilisateurs, la messagerie en temps réel, la création de groupes, les systèmes de publication, ainsi que l’organisation d’une application web selon des standards professionnels.</p>                         
-                        <p> Je travaille avec Git et GitHub pour le versionnage, et je connais bien l’intégration de bibliothèques via CDN. J’utilise des bases de données comme SQLite et PostgreSQL, et je suis capable de déployer mes applications sur des plateformes comme Heroku ou Render.</p>                  
-                          <p>  Curieux, rigoureux et motivé, je m’adapte rapidement et je cherche constamment à progresser. Je suis à la recherche d’un stage en tant que développeur fullstack, afin de consolider mes compétences techniques tout en contribuant activement à des projets concrets.</p>
-                        <div class="flex-shrink-0"><span class="text-primary">Mai 2025</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Developer web et Mobile</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Étudiant en Licence 2 Informatique, je suis un développeur web et mobile junior, passionné par la création d’applications modernes et interactives. Je maîtrise les langages Python et JavaScript, et j’ai réalisé plusieurs projets complets en utilisant des technologies comme Django pour le back-end, React pour le front-end, ainsi que des frameworks mobiles comme React Native.</p>
-                             <p>Grâce à mes projets, notamment un réseau social avec messagerie, gestion de profils, publications et groupes, j’ai acquis de l’expérience dans le développement fullstack. Je sais structurer une application, manipuler des bases de données (PostgreSQL, SQLite), intégrer des API et déployer des applications.</p>                                
-                            <p>Je suis également capable de développer des interfaces mobiles responsives, connectées à des serveurs web, en utilisant des bibliothèques modernes et des outils comme Git, GitHub et les CDN.</p>                                
-                            <p> Sérieux, autonome et curieux, je suis à la recherche d’un stage en développement web et mobile afin de renforcer mes compétences et contribuer à des projets innovants au sein d’une équipe dynamique.</p>
-                            <div class="flex-shrink-0"><span class="text-primary">Janvier 2025 Mai 2025</span></div>                        
+            <div class="resume-section-content p-0">
+                <!-- En-tête style Bannière LiveCareer -->
+                <div class="cv-header-banner">
+                    <div class="header-left">
+                        <h1 class="header-name">
+                            <span class="first-name">AHMADOU</span>
+                            <span class="last-name">NOURIDINE TANOU</span>
+                        </h1>
+                        <div class="header-contact">
+                            <span class="contact-item"><i class="fas fa-phone-alt text-primary me-1"></i> 06-03-28-81</span>
+                            <span class="contact-divider">|</span>
+                            <span class="contact-item"><i class="fas fa-envelope text-primary me-1"></i> tanouahmadou043@gmail.com</span>
                         </div>
                     </div>
-                    <!--
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0"> Web Design</h3>
-                            <div class="subheading">Intelitec Solutions</div>
-                            <p>Gérer ensemble des marchés dynamiques grâce à des réseaux prêts à l'emploi. Reporter stratégiquement les actions ciblant les clients B2C après avoir tiré parti des utilisateurs déjà en place. Visualiser clairement une convergence orientée client sans attendre un retour sur investissement révolutionnaire.</p>
+                    <div class="header-right">
+                        <div class="header-banner-bg"></div>
+                        <div class="profile-image-container">
+                            <img class="img-fluid profile-image" src="assets/img/profile.jpg" alt="Ahmadou Nouridine Tanou">
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Janvier 2025 Mai 2025</span></div>
                     </div>
-                    -->
                 </div>
-            </div>
-        </section>
-        <!--education-->
-        <hr class="m-0">
-        <section class="resume-section" id="education">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Education</h3>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5" >
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Maternelle CEEP de TOUGAN </h3>
-                            <h4 class="mb-0">Ecole Primaire Secteur7 de TOUGAN</h4>
-                            <div class="subheading mb-0">Parcours Primaire de CP1-CM2</div>
-                            <h5 class="mb-0">Lycee Provincial de TOUGAN</h5>
-                            <div class="subheading mb-0">Premier Cycle de 6e a 3e</div>
-                            <div class="subheading mb-0">Second Cycle de 2nd a 1ere</div>
-                            <h6 class="mb-0">LPSS de Bobo-Dioulasso</h6>
-                            <div class="subheading mb-0">TERMINALE</div>
-                            <h3 class="mb-0">Université Nazi Boni </h3>
-                            <div class="subheading mb-0">Computer Science High grammar School</div>
-                            <div class="flex-shrink-0"><span class="text-primary">Octobre 2023 - </span></div>
-                        </div>
+
+                <div class="px-3 px-lg-0">
+                    <div class="subheading mb-3" style="font-size: 1.3rem;">
+                        Étudiant en Licence 3 Informatique | Spécialité Ingénierie des Systèmes d'Information (ESI)
                     </div>
-            </div>
-        </section>
-        <hr class="m-0">
-        <!--skills-->
-        <section class="resume-section" id="skills">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Skills</h2>
-                <div class="subheading mb-5">Programming Languages</div>
-                <ul class="list-inline dev-icons">
-                    <li class="list-inline-item"><a class="fab fa-html5"></a></li>
-                    <li class="list-inline-item"><a class="fab fa-css3-alt"></a></li>
-                    <li class="list-inline-item"><a class="fab fa-c"></a></li>
-                    <li class="list-inline-item"><a class="fab fa-python "></a></li>
-                    <li class="list-inline-item"><a class="fab fa-java "></a></li>
-                    <li class="list-inline-item"><a class="fab fa-js-square "></a></li>
-                </ul>
-                <div class="subheading mb-3">D autre competence</div>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <span class="fa-li mb-0"><i class="fas fa-check"></i></span>
-                        competence en Machine Learning
-                    </li>
-                    <li>
-                        <span class="fa-li mb-0"><i class="fas fa-check"></i></span>
-                        Maitrise de l'outil Bootstrap studio
-                    </li>
-                    <li>
-                        <span class="fa-li mb-0"><i class="fas fa-check"></i></span>
-                        Connaissance avancées en Language C
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <hr  class="m-0">
-        <!--Interesting-->
-        <section class="resume-section" id="interests">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Interests</h2>
-                <p>En plus d’être développeur web, je passe la plupart de mon temps libre à l’extérieur.Dans la nature pour decouvrir plus le monde</p>
-                <p class="mb-0">Quand je suis contraint de rester à l’intérieur,e consacre une grande partie de mon temps libre à explorer les dernières avancées technologiques dans le domaine du développement web front-end.</p>
+                    <p class="lead mb-5">
+                        Étudiant en Licence 3 Informatique, spécialité Ingénierie des Systèmes d'Information à l'ESI, je m'intéresse particulièrement à la conception et au développement de solutions numériques innovantes. Mes compétences couvrent le développement Full Stack (Django, React, React Native), les bases de données, l'intelligence artificielle appliquée, les réseaux informatiques et la cybersécurité. Doté d'un esprit analytique, d'une grande capacité d'apprentissage et d'un sens de l'organisation, je me mets à votre disposition afin de participer à des projets à forte valeur ajoutée tout en consolidation mes compétences techniques et professionnelles.
+                    </p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/Nouridine-ach" target="_blank"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
             </div>
         </section>
         <hr class="m-0" />
-           <!-- Awards-->
-            <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Awards et les Certifications</h2>
+
+        <!-- Parcours Professionnel -->
+        <section class="resume-section" id="experience">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Parcours Professionnel</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Analyste développeur</h3>
+                        <div class="subheading mb-2">ONEA | Ouagadougou | Stage</div>
+                        <div class="experience-item">
+                            <ul class="fa-ul mb-0">
+                                <li><span class="fa-li"><i class="fas fa-check text-primary"></i></span>Élaboration d'une documentation technique pour faciliter la prise en main.</li>
+                                <li><span class="fa-li"><i class="fas fa-check text-primary"></i></span>Définition des spécifications fonctionnelles ou techniques du projet.</li>
+                                <li><span class="fa-li"><i class="fas fa-check text-primary"></i></span>Établissement du cahier des charges en prenant en compte les exigences du client et les besoins utilisateurs, définition de l'architecture et des spécifications techniques.</li>
+                                <li><span class="fa-li"><i class="fas fa-check text-primary"></i></span>Conduite des essais techniques afin de tester le fonctionnement des applications (unitaires, automatisés), correction des bugs, mise à jour des supports.</li>
+                                <li><span class="fa-li"><i class="fas fa-check text-primary"></i></span>Développement d'interfaces web responsive et ergonomiques.</li>
+                                <li><span class="fa-li"><i class="fas fa-check text-primary"></i></span>Planification de tests pour contrôler le bon fonctionnement des solutions techniques.</li>
+                                <li><span class="fa-li"><i class="fas fa-check text-primary"></i></span>Maintenance évolutive du logiciel, élaboration de fonctionnalités pour répondre aux nouveaux besoins, revue du code pour améliorer la performance du système.</li>
+                                <li><span class="fa-li"><i class="fas fa-check text-primary"></i></span>Mise en place d'outils de versionning et de gestion de code.</li>
+                                <li><span class="fa-li"><i class="fas fa-check text-primary"></i></span>Actualisation et ajout de fonctionnalités pour améliorer l'expérience utilisateurs.</li>
+                                <li><span class="fa-li"><i class="fas fa-check text-primary"></i></span>Maintenance des applications : surveillance des performances, correction des anomalies.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary fw-bold">Mars 2026 - Juin 2026</span></div>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+
+        <!-- Projets Réalisés -->
+        <section class="resume-section" id="projects">
+            <div class="resume-section-content">
+                <h2 class="mb-4">Projets Réalisés</h2>
+                
+                <h3 class="mb-3 text-secondary" style="font-size: 1.5rem;"><i class="fas fa-laptop-code me-2"></i>Projets Professionnels & Réalisations Concrètes</h3>
+                <div class="project-grid mb-5">
+                    <!-- Projet 1 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-title">Site pour Notaires</div>
+                            <div class="project-role">Développeur Backend</div>
+                            <p class="project-desc">Plateforme web complète développée pour la gestion des activités notariales. Elle permet la gestion des documents complexes et des opérations métiers spécifiques, fournissant un système robuste orienté gestion administrative.</p>
+                        </div>
+                        <div>
+                            <span class="badge-skill">Django</span>
+                            <span class="badge-skill">Python</span>
+                            <span class="badge-skill">PostgreSQL</span>
+                            <span class="badge-skill">Secured API</span>
+                            <div class="mt-2">
+                                <a href="http://burkinanotaire.com" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> burkinanotaire.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 2 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-title">Site Vitrine & E-Learning JCDIGIT</div>
+                            <div class="project-role">Développeur Full Stack</div>
+                            <p class="project-desc">Conception d'un site vitrine avec possibilité de suivre des cours en ligne pour l'entreprise JCDIGIT. Intègre la présentation des services, activités de l'entreprise et des interfaces modernes responsives.</p>
+                        </div>
+                        <div>
+                            <span class="badge-skill">React</span>
+                            <span class="badge-skill">Node.js</span>
+                            <span class="badge-skill">Responsive UI</span>
+                            <span class="badge-skill">E-Learning</span>
+                            <div class="mt-2">
+                                <a href="http://jcdigits.com" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> jcdigits.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projet 3 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-title">Projet Yiriflat (IA)</div>
+                            <div class="project-role">Développeur IA</div>
+                            <p class="project-desc">Une intelligence artificielle capable de diagnostiquer les maladies agricoles en analysant simplement les photos des feuilles de maïs. Développé en équipe lors d'un Hackathon.</p>
+                        </div>
+                        <div>
+                            <span class="badge-skill">Python</span>
+                            <span class="badge-skill">TensorFlow</span>
+                            <span class="badge-skill">Computer Vision</span>
+                            <span class="badge-skill">Machine Learning</span>
+                        </div>
+                    </div>
+
+                    <!-- Projet 4 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-title">Tuteur Intelligent (Mobile)</div>
+                            <div class="project-role">Développeur Mobile & IA</div>
+                            <p class="project-desc">Application mobile intelligente d'assistance à l'apprentissage intégrant un modèle d'IA (type assistant conversationnel) pour répondre aux questions des élèves et interagir de façon intelligente.</p>
+                        </div>
+                        <div>
+                            <span class="badge-skill">React Native</span>
+                            <span class="badge-skill">Expo</span>
+                            <span class="badge-skill">Gemini API</span>
+                            <span class="badge-skill">NLP</span>
+                        </div>
+                    </div>
+
+                    <!-- Projet 5 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-title">Distributeur Automatique de Fichiers</div>
+                            <div class="project-role">Développeur Application</div>
+                            <p class="project-desc">Système d'envoi et de distribution automatique de fichiers numériques avec gestion automatisée des transferts de documents et optimisation du partage de fichiers.</p>
+                        </div>
+                        <div>
+                            <span class="badge-skill">JavaScript</span>
+                            <span class="badge-skill">File System</span>
+                            <span class="badge-skill">Automation</span>
+                        </div>
+                    </div>
+
+                    <!-- Projet 6 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-title">Application Mobile pour Délégués</div>
+                            <div class="project-role">Développeur Mobile</div>
+                            <p class="project-desc">Application d'organisation et de communication dédiée aux délégués de promotion. Facilite le partage des informations et la gestion interne (Projet en cours).</p>
+                        </div>
+                        <div>
+                            <span class="badge-skill">React Native</span>
+                            <span class="badge-skill">Expo</span>
+                            <span class="badge-skill">SQLite</span>
+                            <span class="badge-skill">En cours</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="mb-3 text-secondary" style="font-size: 1.5rem;"><i class="fas fa-graduation-cap me-2"></i>Projets Académiques & d'École</h3>
+                <div class="project-grid">
+                    <!-- Projet Académique 1 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-title">Système d'Élaboration & Suivi Budgétaire</div>
+                            <div class="project-role">Projet Scolaire</div>
+                            <p class="project-desc">Analyse des besoins et conception d'un système de suivi budgétaire. Permet la gestion des budgets, des lignes budgétaires et le suivi analytique des dépenses.</p>
+                        </div>
+                        <div>
+                            <span class="badge-skill">UML</span>
+                            <span class="badge-skill">SQL</span>
+                            <span class="badge-skill">Modélisation de Données</span>
+                        </div>
+                    </div>
+
+                    <!-- Projet Académique 2 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-title">Projet Rehoboth</div>
+                            <div class="project-role">Projet de Correction</div>
+                            <p class="project-desc">Correction, optimisation des fonctionnalités, de la structure de l'application et amélioration globale de la qualité du code et de l'architecture logicielle existante.</p>
+                        </div>
+                        <div>
+                            <span class="badge-skill">Refactoring</span>
+                            <span class="badge-skill">Code Quality</span>
+                            <span class="badge-skill">Architecture</span>
+                        </div>
+                    </div>
+
+                    <!-- Projet Académique 3 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-title">BurkiCampus</div>
+                            <div class="project-role">Projet Personnel Réalisé</div>
+                            <p class="project-desc">Réseau social conçu et développé avec pour cible principale les étudiants pour faciliter le partage d'actualités et d'échanges académiques.</p>
+                        </div>
+                        <div>
+                            <span class="badge-skill">Django</span>
+                            <span class="badge-skill">React</span>
+                            <span class="badge-skill">Social Network</span>
+                        </div>
+                    </div>
+
+                    <!-- Projet Académique 4 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-title">Gestion des Soutenances</div>
+                            <div class="project-role">Projet Scolaire</div>
+                            <p class="project-desc">Application pour planifier, suivre et gérer les soutenances de fin de cycle au sein de l'établissement scolaire.</p>
+                        </div>
+                        <div>
+                            <span class="badge-skill">Python</span>
+                            <span class="badge-skill">Database Management</span>
+                            <span class="badge-skill">UML</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+
+        <!-- Compétences -->
+        <section class="resume-section" id="skills">
+            <div class="resume-section-content">
+                <h2 class="mb-4">Compétences</h2>
+                <div class="subheading mb-3">Mes Domaines d'Expertise</div>
+                
+                <div class="skill-grid">
+                    <!-- Groupe 1 -->
+                    <div class="skill-card">
+                        <h4><i class="fas fa-code me-2"></i>Développement Web & Mobile</h4>
+                        <div>
+                            <span class="badge-skill">HTML5</span>
+                            <span class="badge-skill">CSS3</span>
+                            <span class="badge-skill">JavaScript</span>
+                            <span class="badge-skill">TypeScript</span>
+                            <span class="badge-skill">Python</span>
+                            <span class="badge-skill">C</span>
+                            <span class="badge-skill">React</span>
+                            <span class="badge-skill">React Native</span>
+                            <span class="badge-skill">Next.js</span>
+                            <span class="badge-skill">Tailwind CSS</span>
+                            <span class="badge-skill">Expo</span>
+                        </div>
+                    </div>
+
+                    <!-- Groupe 2 -->
+                    <div class="skill-card">
+                        <h4><i class="fas fa-server me-2"></i>Bases de Données & APIs</h4>
+                        <div>
+                            <span class="badge-skill">PostgreSQL</span>
+                            <span class="badge-skill">MySQL</span>
+                            <span class="badge-skill">SQLite</span>
+                            <span class="badge-skill">API REST</span>
+                            <span class="badge-skill">JWT Auth</span>
+                            <span class="badge-skill">Documentation API</span>
+                            <span class="badge-skill">Modélisation de bases</span>
+                        </div>
+                    </div>
+
+                    <!-- Groupe 3 -->
+                    <div class="skill-card">
+                        <h4><i class="fas fa-brain me-2"></i>Intelligence Artificielle</h4>
+                        <div>
+                            <span class="badge-skill">IA Générative (Gemini)</span>
+                            <span class="badge-skill">Prompt Engineering</span>
+                            <span class="badge-skill">NLP</span>
+                            <span class="badge-skill">Machine Learning</span>
+                            <span class="badge-skill">R Language</span>
+                        </div>
+                    </div>
+
+                    <!-- Groupe 4 -->
+                    <div class="skill-card">
+                        <h4><i class="fas fa-cogs me-2"></i>Outils & DevOps</h4>
+                        <div>
+                            <span class="badge-skill">Git / GitHub</span>
+                            <span class="badge-skill">Docker</span>
+                            <span class="badge-skill">Linux (Ubuntu)</span>
+                            <span class="badge-skill">Nginx</span>
+                            <span class="badge-skill">Déploiement VPS</span>
+                            <span class="badge-skill">Environnements Python</span>
+                            <span class="badge-skill">CI Basique</span>
+                        </div>
+                    </div>
+
+                    <!-- Groupe 5 -->
+                    <div class="skill-card">
+                        <h4><i class="fas fa-sitemap me-2"></i>Analyse & Architecture</h4>
+                        <div>
+                            <span class="badge-skill">Analyse des Besoins</span>
+                            <span class="badge-skill">Cahiers des Charges</span>
+                            <span class="badge-skill">Conception UML</span>
+                            <span class="badge-skill">Architecture Logicielle</span>
+                            <span class="badge-skill">Applications de Gestion</span>
+                        </div>
+                    </div>
+
+                    <!-- Groupe 6 -->
+                    <div class="skill-card">
+                        <h4><i class="fas fa-shield-alt me-2"></i>Réseaux & Cybersécurité</h4>
+                        <div>
+                            <span class="badge-skill">Sécurisation Web</span>
+                            <span class="badge-skill">Sécurité API</span>
+                            <span class="badge-skill">Authentification</span>
+                            <span class="badge-skill">TCP/IP & Routage</span>
+                            <span class="badge-skill">Dépannage réseau</span>
+                        </div>
+                    </div>
+
+                    <!-- Groupe 7 -->
+                    <div class="skill-card">
+                        <h4><i class="fas fa-tasks me-2"></i>Gestion de Projet</h4>
+                        <div>
+                            <span class="badge-skill">Méthodologie Agile</span>
+                            <span class="badge-skill">Suivi de projets</span>
+                            <span class="badge-skill">Gestion des risques</span>
+                            <span class="badge-skill">Travail en équipe</span>
+                            <span class="badge-skill">Processus Métier</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+
+        <!-- Certificats -->
+        <section class="resume-section" id="certifications">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Certificats & Certifications</h2>
+                <ul class="fa-ul mb-0 cert-list">
+                    <li>
+                        <span class="fa-li"><i class="fas fa-certificate text-primary"></i></span>
+                        <strong>Google IT Support Professional Certificate</strong>
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-certificate text-primary"></i></span>
+                        <strong>SQL Certification</strong>
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-certificate text-primary"></i></span>
+                        <strong>HTML5 & CSS3 Certification</strong>
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-certificate text-primary"></i></span>
+                        <strong>Java Programming Certification</strong>
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-certificate text-primary"></i></span>
+                        <strong>Introduction à l'Intelligence Artificielle</strong> - Cisco Networking Academy (2024-01-01)
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-certificate text-primary"></i></span>
+                        <strong>Cybersecurity Fundamentals</strong> - Cisco Networking Academy (2024-01-01)
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-certificate text-primary"></i></span>
+                        <strong>Data Science with R</strong> - IBM (2024-01-01)
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr class="m-0" />
+
+        <!-- Langues -->
+        <section class="resume-section" id="languages">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Langues</h2>
+                <div class="d-flex flex-column gap-3">
+                    <!-- Français -->
+                    <div class="language-item">
+                        <div class="language-info">
+                            <span class="language-name">Français</span>
+                            <span class="language-level">C2 - Courant / Langue Maternelle</span>
+                        </div>
+                        <div class="dot-rating">
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Anglais -->
+                    <div class="language-item">
+                        <div class="language-info">
+                            <span class="language-name">Anglais</span>
+                            <span class="language-level">B1 - Intermédiaire</span>
+                        </div>
+                        <div class="dot-rating">
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot filled"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+
+        <!-- Formation -->
+        <section class="resume-section" id="education">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Formation</h2>
+                
+                <div class="education-timeline">
+                    <!-- ESI L3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-date">Octobre 2025 - Présent</div>
+                        <div class="timeline-title">Licence 3 : Informatique</div>
+                        <div class="timeline-subtitle">Ecole Supérieure d'Information (ESI)</div>
+                        <div class="timeline-details">
+                            Option : Ingénierie des Systèmes d'Information.
+                        </div>
+                    </div>
+                    
+                    <!-- ESI L2 / UNB -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-date">Octobre 2023 - Juin 2025</div>
+                        <div class="timeline-title">Licence 1 & 2 : Informatique</div>
+                        <div class="timeline-subtitle">Université Nazi Boni | Computer Science High Grammar School</div>
+                        <div class="timeline-details">
+                            Bases de la programmation en Python/C, modélisation de bases de données, réseaux informatiques et mathématiques pour l'informatique.
+                        </div>
+                    </div>
+                    
+                    <!-- BAC D -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-date">Juin 2023</div>
+                        <div class="timeline-title">Baccalauréat Scientifique (Série D)</div>
+                        <div class="timeline-subtitle">Lycée Privé Sya Sanou | Bobo-Dioulasso</div>
+                        <div class="timeline-details">
+                            Diplôme de fin d'études secondaires avec spécialité scientifique.
+                        </div>
+                    </div>
+
+                    <!-- Lycée provincial -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-date">2016 - 2022</div>
+                        <div class="timeline-title">Études Secondaires (Premier & Second Cycle)</div>
+                        <div class="timeline-subtitle">Lycée Provincial de Tougan</div>
+                        <div class="timeline-details">
+                            Parcours scolaire général de la classe de 6ème à la classe de 1ère.
+                        </div>
+                    </div>
+
+                    <!-- Primaire -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-date">Avant 2016</div>
+                        <div class="timeline-title">Enseignement Primaire & Maternelle</div>
+                        <div class="timeline-subtitle">École Primaire Secteur 7 & CEEP de Tougan</div>
+                        <div class="timeline-details">
+                            Parcours du CP1 au CM2 avec obtention du CEP.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+
+        <!-- Centres d'Intérêt & Activités -->
+        <section class="resume-section" id="interests">
+            <div class="resume-section-content">
+                <h2 class="mb-4">Centres d'Intérêt & Activités</h2>
+                
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <h3 class="mb-3 text-secondary" style="font-size: 1.3rem;"><i class="fas fa-heart text-primary me-2"></i>Intérêts Techniques</h3>
+                        <ul class="fa-ul mb-0 interest-list">
+                            <li><span class="fa-li"><i class="fas fa-check text-primary"></i></span>Développement d'applications web et mobiles</li>
+                            <li><span class="fa-li"><i class="fas fa-check text-primary"></i></span>Participation à des projets open source</li>
+                            <li><span class="fa-li"><i class="fas fa-check text-primary"></i></span>Intelligence artificielle et machine learning</li>
+                            <li><span class="fa-li"><i class="fas fa-check text-primary"></i></span>Cybersécurité et protection des données</li>
+                            <li><span class="fa-li"><i class="fas fa-check text-primary"></i></span>Automatisation de tâches (scripts, bots)</li>
+                            <li><span class="fa-li"><i class="fas fa-check text-primary"></i></span>Veille technologique (nouveaux frameworks)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-md-6 mb-4">
+                        <h3 class="mb-3 text-secondary" style="font-size: 1.3rem;"><i class="fas fa-user-circle text-primary me-2"></i>Qualités & Loisirs</h3>
+                        <ul class="fa-ul mb-0 interest-list">
+                            <li><span class="fa-li"><i class="fas fa-check text-primary"></i></span>Résolution de problèmes et défis algorithmiques</li>
+                            <li><span class="fa-li"><i class="fas fa-check text-primary"></i></span>Lecture d'ouvrages techniques ou scientifiques</li>
+                            <li><span class="fa-li"><i class="fas fa-check text-primary"></i></span>Apprentissage en autonomie de nouvelles technos</li>
+                            <li><span class="fa-li"><i class="fas fa-check text-primary"></i></span>Exploration de la nature, randonnée & plein air</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h3 class="mb-3 text-secondary" style="font-size: 1.3rem;"><i class="fas fa-trophy text-primary me-2"></i>Activités & Distinctions</h3>
                     <ul class="fa-ul mb-0">
                         <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Google Certification
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Greatlearning SQL Certification
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Greatlearning HTML5 Certification
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                         Udemy java Certification
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Cisco IA introduction  Certification
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Cisco Cybersecurite introduction Certification
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            IBM RCertification
+                            <span class="fa-li"><i class="fas fa-users text-primary"></i></span>
+                            Membre actif du club <strong>Asoc Linux</strong>
                         </li>
                     </ul>
                 </div>
-            </section>
+            </div>
+        </section>
     </div>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

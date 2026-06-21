@@ -1,0 +1,412 @@
+/* Fichier CSS personnalisé pour le CV de Nouridine */
+
+/* Variables de couleur */
+:root {
+  --primary-color: #bd5d38; /* Couleur orange chaud du thème */
+  --secondary-color: #6c757d;
+  --dark-color: #343a40;
+  --light-bg: #f8f9fa;
+  --border-color: rgba(0,0,0,0.08);
+}
+
+/* Grille de compétences */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.skill-card {
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+}
+
+.skill-card h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--dark-color);
+  margin-bottom: 0.75rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.3rem;
+  display: inline-block;
+}
+
+/* Badges de technologies */
+.badge-skill {
+  display: inline-block;
+  background-color: #f1f3f5;
+  color: #495057;
+  border: 1px solid #dee2e6;
+  border-radius: 30px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  margin: 0.25rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.badge-skill:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
+  transform: scale(1.05);
+}
+
+/* Grille de projets */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.project-card {
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--primary-color);
+  border-radius: 6px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.project-header {
+  margin-bottom: 0.75rem;
+}
+
+.project-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--dark-color);
+  margin-bottom: 0.25rem;
+  text-transform: none !important;
+}
+
+.project-role {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-desc {
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+}
+
+.project-link {
+  font-size: 0.85rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.project-tags {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Indicateur de langues */
+.language-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 380px;
+  padding: 0.75rem 1rem;
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+}
+
+.language-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.language-name {
+  font-weight: 700;
+  color: var(--dark-color);
+}
+
+.language-level {
+  font-size: 0.85rem;
+  color: var(--secondary-color);
+}
+
+.dot-rating {
+  display: inline-flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+}
+
+.dot.filled {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* Timeline d'Éducation */
+.education-timeline {
+  position: relative;
+  border-left: 3px solid var(--primary-color);
+  padding-left: 2rem;
+  margin-left: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -2.4rem; /* Aligné sur la bordure */
+  top: 0.25rem;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 3px rgba(189, 93, 56, 0.2);
+}
+
+.timeline-date {
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+.timeline-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--dark-color);
+  margin-bottom: 0.15rem;
+}
+
+.timeline-subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-details {
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+  line-height: 1.4;
+}
+
+/* Amélioration de la section Parcours Pro */
+.experience-item {
+  position: relative;
+  border-left: 3px solid #e9ecef;
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.experience-item:hover {
+  border-left-color: var(--primary-color);
+}
+
+/* Personnalisations diverses */
+.cert-list li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.interest-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* Micro-animations */
+.social-icons .social-icon {
+  transition: all 0.3s ease;
+}
+
+.social-icons .social-icon:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+
+/* En-tête personnalisé style Bannière LiveCareer */
+.cv-header-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 5px solid #792832;
+  position: relative;
+  overflow: hidden;
+  min-height: 220px;
+  padding: 2.5rem;
+  margin-top: -5rem; /* Compense le padding-top du parent */
+  margin-bottom: 3rem;
+}
+
+.header-left {
+  flex: 1;
+  z-index: 2;
+}
+
+.header-name {
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-weight: 700;
+  line-height: 1.05;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.header-name .first-name {
+  display: block;
+  font-size: 3.2rem;
+  color: #792832; /* Rouge sombre */
+  letter-spacing: 0.05rem;
+}
+
+.header-name .last-name {
+  display: block;
+  font-size: 2.8rem;
+  color: #792832;
+  letter-spacing: 0.05rem;
+}
+
+.header-contact {
+  font-family: "Muli", sans-serif;
+  font-size: 0.95rem;
+  color: #333;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.contact-divider {
+  color: #adb5bd;
+  font-weight: 400;
+}
+
+.header-right {
+  position: relative;
+  width: 320px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header-banner-bg {
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 380px;
+  height: 340px;
+  background-color: #792832;
+  border-bottom-left-radius: 50% 90%;
+  z-index: 1;
+}
+
+.profile-image-container {
+  position: relative;
+  z-index: 2;
+  margin-right: 20px;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 6px solid #792832;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Adaptation responsive de la bannière d'en-tête */
+@media (min-width: 992px) {
+  .cv-header-banner {
+    margin-left: -3rem;
+    margin-right: -3rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .cv-header-banner {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: auto;
+  }
+  
+  .header-right {
+    width: 100%;
+    height: 180px;
+    margin-top: 1.5rem;
+    justify-content: center;
+  }
+  
+  .header-banner-bg {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110%;
+    height: 240px;
+    border-radius: 0 0 50% 50% / 0 0 30px 30px;
+    top: -20px;
+  }
+  
+  .profile-image-container {
+    margin-right: 0;
+    width: 150px;
+    height: 150px;
+  }
+}
+
