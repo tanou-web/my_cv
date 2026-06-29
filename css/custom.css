@@ -2,7 +2,7 @@
 
 /* Variables de couleur */
 :root {
-  --primary-color: #bd5d38; /* Couleur orange chaud du thème */
+  --primary-color: #792832; /* Couleur rouge sombre du thème */
   --secondary-color: #6c757d;
   --dark-color: #343a40;
   --light-bg: #f8f9fa;
@@ -210,7 +210,7 @@
   border-radius: 50%;
   background-color: var(--primary-color);
   border: 3px solid #fff;
-  box-shadow: 0 0 0 3px rgba(189, 93, 56, 0.2);
+  box-shadow: 0 0 0 3px rgba(121, 40, 50, 0.2);
 }
 
 .timeline-date {
@@ -407,6 +407,47 @@
     margin-right: 0;
     width: 150px;
     height: 150px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cv-header-banner {
+    padding: 1rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    margin-top: -3rem; /* Ajuster pour la barre de navigation sur mobile */
+  }
+
+  .header-name .first-name {
+    font-size: 2.2rem;
+  }
+
+  .header-name .last-name {
+    font-size: 1.8rem;
+  }
+
+  .header-contact {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .contact-divider {
+    display: none; /* Cacher le séparateur sur petit écran */
+  }
+
+  .header-right {
+    display: none; /* Masquer la grande image et le fond rouge sur mobile car ils sont déjà dans la navbar */
+  }
+
+  .profile-image-container {
+    width: 120px;
+    height: 120px;
+    border-width: 4px;
+  }
+  
+  .header-banner-bg {
+    height: 180px;
   }
 }
 
